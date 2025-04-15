@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mirth SRV-CL3N-01</title>
+                <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+	<div class="header-container">
+    <h1>Channel Übersicht Mirth Channel Übersicht</h1>
+	<h2>JSON Daten vom 14.04.2025 </h2>
+	</div>
+    
+	<table id="channelsTable">
+        <thead>
+            <tr>
+                <th>Channel Name</th>
+                <th>Channel ID</th>
+			    <th>Status</th>
+			    <th>Source Connector</th>
+                <th>TransportName</th>
+			    <th>Host</th>
+			    <th>Port</th>
+			    <th>charsetEncoding</th>
+                <th>DestinationConnectors</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+	
+	<!-- <script src="./script/getJson.js"></script> --> <!-- blocked by CORS policy -->
+	<script src="./script/data.js"></script> <!-- Json Daten laden -->
+    <script src="./script/main.js"></script> <!-- Json Daten verarbeiten -->
+	<script src="./script/btn.js"></script>    
+</body>
+</html>
