@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 20px;
+}
+/* Haupttabelle */
+table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 20px 0;
+}
+th, td {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: left;
+}
+th {
+	background-color: #f4f4f4;
+}
+
+.header-container {
+	display: flex; /* Elemente nebeneinander anordnen */
+	justify-content: space-between; /* Abstand zwischen den Elementen */
+	align-items: center; /* Vertikale Ausrichtung */
+}
+
+h1 {
+	margin: 0; /* Entfernt unnötige Abstände */
+}
+
+h2 {
+	margin: 0; /* Entfernt unnötige Abstände */
+}
+
+/* Fuer die Untertabellen. Bei Bedarf Klasse definieren*/
+h3 {
+    text-align: center; 
+    margin: 10px 0;     
+    font-weight: bold;  
+}
+
+/* Verschachtelte Tabelle */
+.connector-table {
+	width: 90%; /* Etwas kleiner als die Haupttabelle */
+	margin: 10px auto; /* Zentriert innerhalb der Zelle */
+	border: 1px solid #bbb; /* Leichtere Randfarbe */
+	background-color: #f9f9f9; /* Hellere Hintergrundfarbe */
+}
+.connector-table th {
+	background-color: #e0e0ff; /* Leicht bläuliche Header-Farbe */
+	color: #333; /* Dunkler Text für bessere Lesbarkeit */
+}
+.connector-table td {
+	border: 1px solid #ccc; /* Abweichende Randfarbe */
+	padding: 6px; /* Etwas kleinere Zellen */
+}
+
+.sub-table {
+    background-color: #f9f9d9; /* Helle Farbe für Untertabellen */
+    border-collapse: collapse; /* Keine doppelten Rahmen */
+    width: 100%; /* Volle Breite */
+}
+
+.sub-table th {
+    background-color: #ececec; /* Abhebung für Header */
+    border: 1px solid #dcdcdc;
+}
+
+.sub-table td {
+    border: 1px solid #dcdcdc;
+    padding: 5px;
+}
+
+/* Versteckt verschachtelte Tabelle standardmäßig */
+.hidden {
+	display: none;
+}
+
+.hidden-row {
+	display: none;
+}
+
+.dest-row {
+	background-color: #e6fff7; /* Pastellmint */
+}
+
+.source-filter-row {
+	background-color: #ffe6e6; /* Pastellrosa */
+}
+
+.source-transformer-row {
+	background-color: #e6f7ff; /* Pastellblau */
+}
+
+/* Button zum Auf- und Zuklappen */
+button {
+    background-color: #8B0000; /* Standard Hintergrundfarbe */
+    color: white;             /* Textfarbe */
+    border: none;             /* Kein Rahmen */
+    padding: 5px 10px;       /* Innenabstand */
+    border-radius: 5px;       /* Abgerundete Ecken */
+    cursor: pointer;          /* Zeiger bei Hover */
+                font-size: 12px;
+}
+
+button:hover {
+    background-color: #A52A2A; /* Farbe bei Hover */
+}
